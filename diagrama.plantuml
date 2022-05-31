@@ -1,4 +1,11 @@
 @startuml Gerenciamento de Exames Medicos
+
+    class Paciente{
+        - nome : String
+        - idade : Integer
+        - CPF : Integer
+        + construtor(nome, idade, cpf)
+    }
     class Teste{
         - atributo
         + construtor (atributo)
