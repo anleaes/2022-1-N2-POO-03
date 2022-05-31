@@ -1,0 +1,11 @@
+@startuml Gerenciamento de Exames Medicos
+
+    class Paciente{
+        - nome : String
+        - idade : Integer
+        - CPF : Integer
+        + construtor(nome, idade, cpf)
+        + marcarConsulta(Especialidade, Medico, dia, hora)
+    }
+
+@enduml
