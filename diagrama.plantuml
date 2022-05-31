@@ -6,9 +6,5 @@
         - CPF : Integer
         + construtor(nome, idade, cpf)
     }
-    class Teste{
-        - atributo
-        + construtor (atributo)
-    }
 
 @enduml
