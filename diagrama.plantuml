@@ -1,4 +1,4 @@
-@startuml
+@startuml Gerenciamento de Exames Medicos
     class Teste{
         - atributo
         + construtor (atributo)
