@@ -6,3 +6,6 @@ class Paciente():
 
     def marcarConsulta(self, Especialidade, Medico, dia, hora):
         pass
+
+    def cancelarConsulta(self):
+        pass
