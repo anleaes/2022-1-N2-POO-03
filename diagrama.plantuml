@@ -10,9 +10,18 @@
         + editarConsulta(...)
     }
 
+    class Medico{
+        - nome : String
+        - idade : Integer
+        - CRM : Integer
+        + construtor(nome, idade, crm)
+    }
+
     class Especialidade{
         - nome : String
         + construtor(nome)
     }
+
+
 
 @enduml
