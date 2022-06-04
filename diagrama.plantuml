@@ -6,6 +6,23 @@
         - CPF : Integer
         + construtor(nome, idade, cpf)
         + marcarConsulta(Especialidade, Medico, dia, hora)
+        + cancelarConsulta(...)
+        + editarConsulta(...)
     }
+
+    class Medico{
+        - nome : String
+        - idade : Integer
+        - CRM : Integer
+        + construtor(nome, idade, crm)
+    }
+
+    class Especialidade{
+        - nome : String
+        + construtor(nome)
+    }
+
+    Paciente *-- Medico
+    Paciente *-- Especialidade
 
 @enduml
