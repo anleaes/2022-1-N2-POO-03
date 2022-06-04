@@ -10,4 +10,9 @@
         + editarConsulta(...)
     }
 
+    class Especialidade{
+        - nome : String
+        + construtor(nome)
+    }
+
 @enduml
