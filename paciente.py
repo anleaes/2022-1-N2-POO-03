@@ -9,3 +9,6 @@ class Paciente():
 
     def cancelarConsulta(self):
         pass
+
+    def editarConsulta(self):
+        pass
