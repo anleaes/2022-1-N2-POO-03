@@ -6,6 +6,8 @@
         - CPF : Integer
         + construtor(nome, idade, cpf)
         + marcarConsulta(Especialidade, Medico, dia, hora)
+        + cancelarConsulta(...)
+        + editarConsulta(...)
     }
 
 @enduml
