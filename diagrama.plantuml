@@ -22,6 +22,7 @@
         + construtor(nome)
     }
 
-
+    Paciente *-- Medico
+    Paciente *-- Especialidade
 
 @enduml
