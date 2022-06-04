@@ -12,3 +12,6 @@ class Paciente():
 
     def editarConsulta(self):
         pass
+
+    def verConsultas(self):
+        pass
