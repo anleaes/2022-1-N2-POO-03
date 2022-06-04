@@ -8,6 +8,7 @@
         + marcarConsulta(Especialidade, Medico, dia, hora)
         + cancelarConsulta(...)
         + editarConsulta(...)
+        + verConsultas(...)
     }
 
     class Medico{
