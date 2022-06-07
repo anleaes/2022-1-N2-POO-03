@@ -3,4 +3,3 @@ class Medico():
         self._nome = nome
         self._idade = idade
         self._crm = crm
-        pass

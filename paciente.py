@@ -5,7 +5,7 @@ class Paciente():
         self._cpf = cpf
 
     def marcarConsulta(self, Especialidade, Medico, dia, hora):
-        pass
+        print("")
 
     def cancelarConsulta(self):
         pass

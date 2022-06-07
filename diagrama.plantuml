@@ -24,6 +24,6 @@
     }
 
     Paciente *-- Medico
-    Paciente *-- Especialidade
+    Medico *-- Especialidade
 
 @enduml
