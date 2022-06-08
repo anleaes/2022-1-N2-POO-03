@@ -1,7 +1,6 @@
 class Especialidade:
-    def __init__(self, nome, medico):
+    def __init__(self, nome):
         self._nome = nome
-        self._medico = medico
 
 
     def getNome(self):
