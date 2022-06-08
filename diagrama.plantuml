@@ -24,6 +24,7 @@
     class Especialidade{
         - nome : String
         + construtor(nome)
+        + getNome()
     }
 
     Paciente *-- Medico
