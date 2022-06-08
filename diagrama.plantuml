@@ -5,6 +5,9 @@
         - sala : Sala
         - exame : Exames
         + construtor(hora, sala, exame)
+        + getHora()
+        + getSala()
+        + getExame()
     }
 
     class Paciente{
@@ -67,7 +70,9 @@
     Paciente <|-- CadastroPaciente
     Paciente <|-- Medico
     Medico *-- Especialidade
-
+    Exames *-- Agenda
+    Sala *-- Agenda
+    Agenda *-- Medico
     Clinica *-- Sala
 
 @enduml
