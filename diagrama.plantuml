@@ -32,6 +32,9 @@
         + getCPF()
         + getEndereco()
         + getTelefone()
+        + setCPF(cpf)
+        + setEndereco(endereco)
+        + setTelefone(telefone)
     }
 
     class Medico{
