@@ -11,8 +11,6 @@ class Medico():
 
     def getIdade(self):
         return self._idade
-    def setIdade(self, idade):
-        self._idade = idade
 
     def getCRM(self):
         return self._crm
