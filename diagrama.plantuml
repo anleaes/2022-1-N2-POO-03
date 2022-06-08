@@ -68,6 +68,9 @@
         - medico : Medico
         + construtor(nome, medico)
         + getNome()
+        + getMedico()
+        + setNome(especialidade)
+        + setMedico(medico)
     }
 
     class Clinica{
@@ -78,6 +81,9 @@
         + getNome()
         + getEndereco()
         + getTelefone()
+        + setNome(nomeClinica)
+        + setEndereco(endereco)
+        + setTelefone(telefone)
     }
 
     class Sala{
