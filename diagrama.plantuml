@@ -7,7 +7,6 @@
         + construtor(nome, idade, cpf)
         + marcarConsulta(Especialidade, dia, hora)
         + getNome()
-        + setNome(nome)
         + getIdade()
         + getCPF()
     }
