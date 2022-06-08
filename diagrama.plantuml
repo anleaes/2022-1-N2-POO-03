@@ -27,6 +27,13 @@
         + getNome()
     }
 
+    class Clinica{
+        - nome : String
+        - endereco : String
+        - telefone : Integer
+        + construtor(nome, endereco, telefone)
+    }
+
     Paciente *-- Medico
     Paciente *-- Especialidade
 
