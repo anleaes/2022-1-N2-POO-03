@@ -3,12 +3,10 @@
     class Paciente{
         - nome : String
         - idade : Integer
-        - CPF : Integer
         + construtor(nome, idade, cpf)
         + marcarConsulta(Especialidade, dia, hora)
         + getNome()
         + getIdade()
-        + getCPF()
     }
 
     class CadastroPaciente{
