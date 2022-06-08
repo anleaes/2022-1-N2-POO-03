@@ -49,8 +49,9 @@
         + construtor(numeroSala, andar)
     }
 
-    Paciente *-- Medico
-    Paciente *-- Especialidade
+    Paciente <|-- CadastroPaciente
+    Paciente <|-- Medico
+    Medico *-- Especialidade
 
     Clinica *-- Sala
 
