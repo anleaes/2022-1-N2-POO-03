@@ -89,7 +89,14 @@
     class Sala{
         - numeroSala : Integer
         - andar : Integer
-        + construtor(numeroSala, andar)
+        - clinica : Clinica
+        + construtor(numeroSala, andar, clinica)
+        + getNumeroSala()
+        + getAndar()
+        + getClinica()
+        + setNumeroSala(numeroSala)
+        + setAndar(andar)
+        + setClinica(clinica)
     }
 
     Paciente <|-- CadastroPaciente
