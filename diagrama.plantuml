@@ -19,6 +19,8 @@
         + construtor(nome, idade)
         + getNome()
         + getIdade()
+        + setNome(nome)
+        + setIdade(idade)
     }
 
     class CadastroPaciente{
