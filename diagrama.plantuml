@@ -14,7 +14,6 @@
         - CRM : Integer
         + construtor(nome, idade, crm)
         + getNome()
-        + setNome(nome)
         + getIdade()
         + setIdade(idade)
         + getCRM()
