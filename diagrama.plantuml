@@ -7,9 +7,7 @@
         + construtor(nome, idade, cpf)
         + marcarConsulta(Especialidade, dia, hora)
         + getNome()
-        + setNome(nome)
         + getIdade()
-        + setIdade(idade)
         + getCPF()
     }
 
@@ -26,6 +24,7 @@
     class Especialidade{
         - nome : String
         + construtor(nome)
+        + getNome()
     }
 
     Paciente *-- Medico
