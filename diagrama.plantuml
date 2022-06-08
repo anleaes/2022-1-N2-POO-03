@@ -13,6 +13,7 @@
         - idade : Integer
         - CRM : Integer
         + construtor(nome, idade, crm)
+        + getNome()
     }
 
     class Especialidade{
