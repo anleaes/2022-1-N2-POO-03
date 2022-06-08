@@ -6,6 +6,11 @@
         - CPF : Integer
         + construtor(nome, idade, cpf)
         + marcarConsulta(Especialidade, dia, hora)
+        + getNome()
+        + setNome(nome)
+        + getIdade()
+        + setIdade(idade)
+        + getCPF()
     }
 
     class Medico{
