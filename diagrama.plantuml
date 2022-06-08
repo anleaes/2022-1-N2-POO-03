@@ -29,6 +29,7 @@
 
     class Especialidade{
         - nome : String
+        - medico : Medico
         + construtor(nome)
         + getNome()
     }
