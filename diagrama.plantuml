@@ -8,6 +8,8 @@
         + marcarConsulta(Especialidade, dia, hora)
         + getNome()
         + setNome(nome)
+        + getIdade()
+        + setIdade(idade)
     }
 
     class Medico{
