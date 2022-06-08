@@ -5,5 +5,7 @@ class Paciente():
         self._cpf = cpf
 
     def marcarConsulta(self, Especialidade, dia, hora):
-        print(f"CONSULTA MARCADA COM: {Especialidade.getNome()} / MARCADO dia {dia}, hora {hora}")
-        pass
+        if dia < 30 and dia > 0:
+            print(f"CONSULTA MARCADA COM: {Especialidade.getNome()} / MARCADO dia {dia}, hora {hora}")
+            pass # fim if
+        pass # fim marcarConsulta
