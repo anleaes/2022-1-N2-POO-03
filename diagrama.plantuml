@@ -16,7 +16,6 @@
         + getNome()
         + getIdade()
         + getCRM()
-        + setCRM(crm)
     }
 
     class Especialidade{
