@@ -15,6 +15,7 @@
         + construtor(nome, idade, crm)
         + getNome()
         + setNome(nome)
+        + getIdade()
     }
 
     class Especialidade{
