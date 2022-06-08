@@ -5,5 +5,5 @@ class Paciente():
         self._cpf = cpf
 
     def marcarConsulta(self, Especialidade, dia, hora):
-        print(f"CONSULTA MARCADA COM: {Especialidade.getNome()} / MARCADO EM: {dia} : {hora}")
+        print(f"CONSULTA MARCADA COM: {Especialidade.getNome()} / MARCADO dia {dia}, hora {hora}")
         pass
