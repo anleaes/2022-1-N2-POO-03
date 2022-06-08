@@ -46,12 +46,21 @@
         + getNome()
         + getIdade()
         + getCRM()
+        + getPaciente()
+        + setNome(nome)
+        + setIdade(idade)
+        + setCRM(crm)
+        + setPaciente(paciente)
     }
 
     class Exames{
         - nome : String
         - tipoExame : String
         + construtor(nome, tipoExame)
+        + getNome()
+        + getTipoExame()
+        + setNome(nome)
+        + setTipoExame(exame)
     }
 
     class Especialidade{
