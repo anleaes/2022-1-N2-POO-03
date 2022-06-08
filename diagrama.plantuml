@@ -29,6 +29,9 @@
         - telefone : Integer
         - paciente : Paciente
         + construtor(cpf, endereco, telefone, paciente)
+        + getCPF()
+        + getEndereco()
+        + getTelefone()
     }
 
     class Medico{
