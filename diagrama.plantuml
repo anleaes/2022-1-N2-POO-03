@@ -27,6 +27,16 @@
         + getNome()
     }
 
+    class Clinica{
+        - nome : String
+        - endereco : String
+        - telefone : Integer
+        + construtor(nome, endereco, telefone)
+        + getNome()
+        + getEndereco()
+        + getTelefone()
+    }
+
     class Sala(){
         - numeroSala : Integer
         - andar : Integer
