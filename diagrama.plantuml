@@ -15,7 +15,6 @@
         + construtor(nome, idade, crm)
         + getNome()
         + getIdade()
-        + setIdade(idade)
         + getCRM()
         + setCRM(crm)
     }
