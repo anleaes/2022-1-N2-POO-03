@@ -7,5 +7,5 @@ class Paciente():
     def marcarConsulta(self, Especialidade, dia, hora):
         if dia < 30 and dia > 0:
             print(f"CONSULTA MARCADA COM: {Especialidade.getNome()} / MARCADO dia {dia}, hora {hora}")
-            pass
-        pass
+            pass # fim if
+        pass # fim marcarConsulta
