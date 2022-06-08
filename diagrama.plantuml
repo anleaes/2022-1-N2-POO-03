@@ -9,7 +9,6 @@
         + getNome()
         + setNome(nome)
         + getIdade()
-        + setIdade(idade)
         + getCPF()
     }
 
