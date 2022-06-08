@@ -1,30 +1,76 @@
 @startuml Gerenciamento de Exames Medicos
 
+    class Agenda{
+        - hora : String
+        - sala : Sala
+        - exame : Exames
+        + construtor(hora, sala, exame)
+        + getHora()
+        + getSala()
+        + getExame()
+        + setHora(hora)
+        + setSala(sala)
+        + setExame(exame)
+    }
+
     class Paciente{
         - nome : String
         - idade : Integer
-        - CPF : Integer
-        + construtor(nome, idade, cpf)
-        + marcarConsulta(Especialidade, dia, hora)
+        + construtor(nome, idade)
         + getNome()
         + getIdade()
+        + setNome(nome)
+        + setIdade(idade)
+    }
+
+    class CadastroPaciente{
+        - cpf : Integer
+        - endereco : String
+        - telefone : Integer
+        - paciente : Paciente
+        + construtor(cpf, endereco, telefone, paciente)
         + getCPF()
+        + getEndereco()
+        + getTelefone()
+        + setCPF(cpf)
+        + setEndereco(endereco)
+        + setTelefone(telefone)
     }
 
     class Medico{
         - nome : String
         - idade : Integer
         - CRM : Integer
-        + construtor(nome, idade, crm)
+        - paciente : Paciente
+        + construtor(nome, idade, crm, paciente)
         + getNome()
         + getIdade()
         + getCRM()
+        + getPaciente()
+        + setNome(nome)
+        + setIdade(idade)
+        + setCRM(crm)
+        + setPaciente(paciente)
+    }
+
+    class Exames{
+        - nome : String
+        - tipoExame : String
+        + construtor(nome, tipoExame)
+        + getNome()
+        + getTipoExame()
+        + setNome(nome)
+        + setTipoExame(exame)
     }
 
     class Especialidade{
         - nome : String
-        + construtor(nome)
+        - medico : Medico
+        + construtor(nome, medico)
         + getNome()
+        + getMedico()
+        + setNome(especialidade)
+        + setMedico(medico)
     }
 
     class Clinica{
@@ -35,17 +81,30 @@
         + getNome()
         + getEndereco()
         + getTelefone()
+        + setNome(nomeClinica)
+        + setEndereco(endereco)
+        + setTelefone(telefone)
     }
 
-    class Sala(){
+    class Sala{
         - numeroSala : Integer
         - andar : Integer
-        + construtor(numeroSala, andar)
+        - clinica : Clinica
+        + construtor(numeroSala, andar, clinica)
+        + getNumeroSala()
+        + getAndar()
+        + getClinica()
+        + setNumeroSala(numeroSala)
+        + setAndar(andar)
+        + setClinica(clinica)
     }
 
-    Paciente *-- Medico
-    Paciente *-- Especialidade
-
+    Paciente <|-- CadastroPaciente
+    Paciente <|-- Medico
+    Medico *-- Especialidade
+    Exames *-- Agenda
+    Sala *-- Agenda
+    Agenda *-- Medico
     Clinica *-- Sala
 
 @enduml
