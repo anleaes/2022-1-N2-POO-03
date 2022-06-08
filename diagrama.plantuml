@@ -5,10 +5,7 @@
         - idade : Integer
         - CPF : Integer
         + construtor(nome, idade, cpf)
-        + marcarConsulta(Especialidade, Medico, dia, hora)
-        + cancelarConsulta(...)
-        + editarConsulta(...)
-        + verConsultas(...)
+        + marcarConsulta(Especialidade, dia, hora)
     }
 
     class Medico{
