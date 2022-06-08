@@ -46,4 +46,6 @@
     Paciente *-- Medico
     Paciente *-- Especialidade
 
+    Clinica *-- Sala
+
 @enduml
