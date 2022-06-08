@@ -36,6 +36,13 @@
         + getEndereco()
         + getTelefone()
     }
+
+    class Sala(){
+        - numeroSala : Integer
+        - andar : Integer
+        + construtor(numeroSala, andar)
+    }
+
     Paciente *-- Medico
     Paciente *-- Especialidade
 
