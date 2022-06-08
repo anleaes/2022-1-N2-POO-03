@@ -11,6 +11,10 @@
         + getCPF()
     }
 
+    class CadastroPaciente{
+        - cpf : integer
+    }
+
     class Medico{
         - nome : String
         - idade : Integer
