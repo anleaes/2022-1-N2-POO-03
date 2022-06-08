@@ -5,3 +5,7 @@ from especialidade import Especialidade
 paciente1 = Paciente("fabio", 24, 000000000)
 espec1 = Especialidade("neurologista")
 medico1 = Medico("julio", 37, 11111, espec1)
+
+
+
+paciente1.marcarConsulta(medico1, 12, "11:00")
