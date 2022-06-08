@@ -8,6 +8,9 @@
         + getHora()
         + getSala()
         + getExame()
+        + setHora(hora)
+        + setSala(sala)
+        + setExame(exame)
     }
 
     class Paciente{
