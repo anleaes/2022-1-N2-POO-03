@@ -16,6 +16,8 @@
         + getNome()
         + setNome(nome)
         + getIdade()
+        + setIdade(idade)
+
     }
 
     class Especialidade{
