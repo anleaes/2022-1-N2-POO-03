@@ -1,5 +1,12 @@
 @startuml Gerenciamento de Exames Medicos
 
+    class Agenda{
+        - hora : String
+        - sala : Sala
+        - exame : Exames
+        + construtor(hora, sala, exame)
+    }
+
     class Paciente{
         - nome : String
         - idade : Integer
@@ -21,16 +28,23 @@
         - nome : String
         - idade : Integer
         - CRM : Integer
-        + construtor(nome, idade, crm)
+        - paciente : Paciente
+        + construtor(nome, idade, crm, paciente)
         + getNome()
         + getIdade()
         + getCRM()
     }
 
+    class Exames{
+        - nome : String
+        - tipoExame : String
+        + construtor(nome, tipoExame)
+    }
+
     class Especialidade{
         - nome : String
         - medico : Medico
-        + construtor(nome)
+        + construtor(nome, medico)
         + getNome()
     }
 
