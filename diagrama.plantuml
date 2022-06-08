@@ -10,6 +10,8 @@
         + setNome(nome)
         + getIdade()
         + setIdade(idade)
+        + getCPF()
+        + setCPF(cpf)
     }
 
     class Medico{
