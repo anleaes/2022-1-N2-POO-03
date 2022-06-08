@@ -36,7 +36,6 @@
         + getEndereco()
         + getTelefone()
     }
-
     Paciente *-- Medico
     Paciente *-- Especialidade
 
