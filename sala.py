@@ -6,3 +6,5 @@ class Sala:
 
     def getNumeroSala(self):
         return self._numeroSala
+    def setNumeroSala(self, numeroSala):
+        self._numeroSala = numeroSala
