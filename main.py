@@ -9,5 +9,6 @@ from cadastroPaciente import CadastroPaciente
 
 clinica1 = Clinica("feldmann", "rua fulano de tal", 51995563241)
 sala1 = Sala(1, 1, clinica1)
+exame1 = Exames("sangue", "laboritorial")
 
 agenda1 = Agenda("12:00", sala1, exame1, medico1)
