@@ -13,3 +13,6 @@ class Agenda:
         return self._sala
     def setSala(self, sala):
         self._sala = sala
+
+    def getExame(self):
+        return self._exame
