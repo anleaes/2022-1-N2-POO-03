@@ -9,3 +9,6 @@ class CadastroPaciente:
         return self._cpf
     def setCPF(self, cpf):
         self._cpf = cpf
+
+    def getEndereco(self):
+        return self._endereco
