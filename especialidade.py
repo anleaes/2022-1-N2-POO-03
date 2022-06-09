@@ -7,3 +7,6 @@ class Especialidade:
         return self._nome
     def setNome(self, nome):
         self._nome = nome
+
+    def getMedico(self):
+        return self._medico
