@@ -4,7 +4,7 @@
         - hora : String
         - sala : Sala
         - exame : Exames
-        - medico: Medico
+        - especialidade : Especialidade
         + construtor(hora, sala, exame)
         + getHora()
         + setHora(hora)
@@ -110,7 +110,7 @@
     Medico *--> Especialidade
     Exames *--> Agenda
     Sala *--> Agenda
-    Agenda <--* Medico
+    Agenda <--* Especialidade
     Clinica *--> Sala
 
 @enduml
