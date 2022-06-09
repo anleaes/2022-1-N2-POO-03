@@ -8,3 +8,6 @@ class Sala:
         return self._numeroSala
     def setNumeroSala(self, numeroSala):
         self._numeroSala = numeroSala
+
+    def getAndar(self):
+        return self._andar
