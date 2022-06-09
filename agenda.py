@@ -16,3 +16,5 @@ class Agenda:
 
     def getExame(self):
         return self._exame
+    def setExame(self, exame):
+        self._exame = exame
