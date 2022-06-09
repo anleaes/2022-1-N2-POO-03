@@ -22,5 +22,5 @@ class Agenda:
     def verificarHorario(self, hora, sala):
         pass
 
-    def agendarExame(self, exame):
+    def agendarExame(self, exame, medico):
         pass
