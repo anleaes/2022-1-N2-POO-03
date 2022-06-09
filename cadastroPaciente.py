@@ -12,3 +12,5 @@ class CadastroPaciente:
 
     def getEndereco(self):
         return self._endereco
+    def setEndereco(self, endereco):
+        self._endereco = endereco
