@@ -20,6 +20,11 @@ class Agenda:
     def setExame(self, exame):
         self._exame = exame
 
+    def getEspecialidade(self):
+        return self._especialidade
+    def setEspecialidade(self, especialidade):
+        self._especialidade = especialidade
+
     def verificarHorario(self, hora, sala):
         pass
 
