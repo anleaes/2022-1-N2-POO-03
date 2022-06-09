@@ -4,6 +4,7 @@
         - hora : String
         - sala : Sala
         - exame : Exames
+        - medico: Medico
         + construtor(hora, sala, exame)
         + getHora()
         + getSala()
@@ -12,7 +13,7 @@
         + setSala(sala)
         + setExame(exame)
         + verificarHorario(hora, sala)
-        + agendarExame(exame)
+        + agendarExame(exame, medico)
     }
 
     class Paciente{
@@ -102,12 +103,12 @@
         + setClinica(clinica)
     }
 
-    Paciente <|-- CadastroPaciente
-    Paciente <|-- Medico
-    Medico *-- Especialidade
-    Exames *-- Agenda
-    Sala *-- Agenda
-    Agenda *-- Medico
-    Clinica *-- Sala
+    Paciente <|--> CadastroPaciente
+    Paciente <|--> Medico
+    Medico *--> Especialidade
+    Exames *--> Agenda
+    Sala *--> Agenda
+    Agenda <--* Medico
+    Clinica *--> Sala
 
 @enduml
