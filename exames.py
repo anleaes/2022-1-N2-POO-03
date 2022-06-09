@@ -5,3 +5,5 @@ class Exames():
 
     def getNome(self):
         return self._nome
+    def setNome(self, nomeExame):
+        self._nome = nomeExame
