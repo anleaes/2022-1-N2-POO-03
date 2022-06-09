@@ -9,9 +9,6 @@ class Medico():
     def setNome(self, nome):
         self._nome = nome
 
-    def getIdade(self):
-        return self._idade
-
     def getCRM(self):
         return self._crm
     def setCRM(self, crm):
