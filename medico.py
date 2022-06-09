@@ -15,6 +15,8 @@ class Medico():
 
     def getCRM(self):
         return self._crm
+    def setCRM(self, crm):
+        self._crm = crm
 
     def getPaciente(self):
         return self._paciente
