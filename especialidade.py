@@ -5,3 +5,5 @@ class Especialidade:
 
     def getNome(self):
         return self._nome
+    def setNome(self, nome):
+        self._nome = nome
