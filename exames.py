@@ -5,10 +5,3 @@ class Exames():
 
     def getNome(self):
         return self._nome
-    def setNome(self, nomeExame):
-        self._nome = nomeExame
-
-    def getTipoExame(self):
-        return self._tipoExame
-    def setTipoExame(self, tipoExame):
-        self._tipoExame = tipoExame
