@@ -11,6 +11,7 @@
         + setHora(hora)
         + setSala(sala)
         + setExame(exame)
+        + verificarHorario(hora, sala)
     }
 
     class Paciente{
