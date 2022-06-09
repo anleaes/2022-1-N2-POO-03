@@ -16,3 +16,5 @@ class Sala:
 
     def getClinica(self):
         return self._clinica
+    def setClinica(self, clinica):
+        self._clinica = clinica
