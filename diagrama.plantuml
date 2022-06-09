@@ -103,12 +103,12 @@
         + setClinica(clinica)
     }
 
-    Paciente <|-- CadastroPaciente
-    Paciente <|-- Medico
-    Medico *-- Especialidade
-    Exames *-- Agenda
-    Sala *-- Agenda
-    Agenda *-- Medico
-    Clinica *-- Sala
+    Paciente <|--> CadastroPaciente
+    Paciente <|--> Medico
+    Medico *--> Especialidade
+    Exames *--> Agenda
+    Sala *--> Agenda
+    Agenda <--* Medico
+    Clinica *--> Sala
 
 @enduml
