@@ -6,3 +6,6 @@ class Agenda:
 
     def getHora(self):
         return self._hora
+    def setHora(self, hora):
+        self._hora = hora
+
