@@ -21,3 +21,6 @@ class Agenda:
 
     def verificarHorario(self, hora, sala):
         pass
+
+    def agendarExame(self, exame):
+        pass
