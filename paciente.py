@@ -5,6 +5,8 @@ class Paciente():
 
     def getNome(self):
         return self._nome
-
     def setNome(self, nome):
         self._nome = nome
+
+    def getIdade(self):
+        return self._idade
