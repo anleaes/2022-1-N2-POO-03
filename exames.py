@@ -7,3 +7,6 @@ class Exames():
         return self._nome
     def setNome(self, nomeExame):
         self._nome = nomeExame
+
+    def getTipoExame(self):
+        return self._tipoExame
