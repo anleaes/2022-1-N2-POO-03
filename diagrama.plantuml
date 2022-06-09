@@ -113,6 +113,12 @@
         + construtor(nomeRua, numero, bairro, cidade)
     }
 
+    class Telefone{
+        - ddd : Integer
+        - numero : Integer
+        + construtor(ddd, numero)
+    }
+
     Paciente <|--> CadastroPaciente
     Paciente <|--> Medico
     Medico *--> Especialidade
