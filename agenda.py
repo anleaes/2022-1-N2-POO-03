@@ -1,9 +1,9 @@
 class Agenda:
-    def __init__(self, hora, sala, exame, medico):
+    def __init__(self, hora, sala, exame, especialidade):
         self._hora = hora
         self._sala = sala
         self._exame = exame
-        self._medico = medico
+        self._especialidade = especialidade
 
     def getHora(self):
         return self._hora
@@ -20,8 +20,13 @@ class Agenda:
     def setExame(self, exame):
         self._exame = exame
 
+    def getEspecialidade(self):
+        return self._especialidade
+    def setEspecialidade(self, especialidade):
+        self._especialidade = especialidade
+
     def verificarHorario(self, hora, sala):
         pass
 
-    def agendarExame(self, exame, medico):
+    def agendarExame(self, exame, especialidade):
         pass
