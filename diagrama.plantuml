@@ -12,7 +12,7 @@
         + setSala(sala)
         + setExame(exame)
         + verificarHorario(hora, sala)
-        + agendarExame(exame)
+        + agendarExame(exame, medico)
     }
 
     class Paciente{
