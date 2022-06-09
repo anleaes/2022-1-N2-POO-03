@@ -37,6 +37,7 @@
         + setCPF(cpf)
         + setEndereco(endereco)
         + setTelefone(telefone)
+        + verificaCadastro(paciente, cpf, endereco, telefone)
     }
 
     class Medico{
