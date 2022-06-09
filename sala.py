@@ -11,3 +11,5 @@ class Sala:
 
     def getAndar(self):
         return self._andar
+    def setAndar(self, andar):
+        self._andar = andar
