@@ -4,16 +4,18 @@
         - hora : String
         - sala : Sala
         - exame : Exames
-        - medico: Medico
+        - especialidade : Especialidade
         + construtor(hora, sala, exame)
         + getHora()
-        + getSala()
-        + getExame()
         + setHora(hora)
+        + getSala()
         + setSala(sala)
+        + getExame()
         + setExame(exame)
+        + getEspecialidade()
+        + setEspecialidade(especialidade)
         + verificarHorario(hora, sala)
-        + agendarExame(exame, medico)
+        + agendarExame(exame, especialidade)
     }
 
     class Paciente{
@@ -108,7 +110,7 @@
     Medico *--> Especialidade
     Exames *--> Agenda
     Sala *--> Agenda
-    Agenda <--* Medico
+    Agenda <--* Especialidade
     Clinica *--> Sala
 
 @enduml
