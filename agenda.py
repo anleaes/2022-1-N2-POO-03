@@ -11,3 +11,5 @@ class Agenda:
 
     def getSala(self):
         return self._sala
+    def setSala(self, sala):
+        self._sala = sala
