@@ -4,3 +4,6 @@ class CadastroPaciente:
         self._endereco = endereco
         self._telefone = telefone
         self._paciente = paciente
+
+    def getCPF(self):
+        return self._cpf
