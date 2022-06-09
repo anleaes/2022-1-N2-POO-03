@@ -8,3 +8,8 @@ class Agenda:
         return self._hora
     def setHora(self, hora):
         self._hora = hora
+
+    def getSala(self):
+        return self._sala
+    def setSala(self, sala):
+        self._sala = sala
