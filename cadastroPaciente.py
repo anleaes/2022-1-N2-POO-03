@@ -17,3 +17,5 @@ class CadastroPaciente:
 
     def getTelefone(self):
         return self._telefone
+    def setTelefone(self, telefone):
+        self._telefone = telefone
