@@ -8,3 +8,6 @@ class Clinica:
         return self._nome
     def setNome(self, nomeClinica):
         self._nome = nomeClinica
+
+    def getEndereco(self):
+        return self._endereco
