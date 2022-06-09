@@ -7,3 +7,5 @@ class CadastroPaciente:
 
     def getCPF(self):
         return self._cpf
+    def setCPF(self, cpf):
+        self._cpf = cpf
