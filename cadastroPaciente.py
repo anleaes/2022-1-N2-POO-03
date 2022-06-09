@@ -19,3 +19,5 @@ class CadastroPaciente:
         return self._telefone
     def setTelefone(self, telefone):
         self._telefone = telefone
+
+    def verificaCadastro(self, paciente, cpf, endereco, telefone):
