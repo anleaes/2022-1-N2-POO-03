@@ -4,6 +4,7 @@
         - hora : String
         - sala : Sala
         - exame : Exames
+        - medico: Medico
         + construtor(hora, sala, exame)
         + getHora()
         + getSala()
