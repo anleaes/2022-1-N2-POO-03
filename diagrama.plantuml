@@ -7,13 +7,15 @@
         - medico: Medico
         + construtor(hora, sala, exame)
         + getHora()
-        + getSala()
-        + getExame()
         + setHora(hora)
+        + getSala()
         + setSala(sala)
+        + getExame()
         + setExame(exame)
+        + getEspecialidade()
+        + setEspecialidade(especialidade)
         + verificarHorario(hora, sala)
-        + agendarExame(exame, medico)
+        + agendarExame(exame, especialidade)
     }
 
     class Paciente{
