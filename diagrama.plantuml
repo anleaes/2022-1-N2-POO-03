@@ -11,6 +11,8 @@
         + setHora(hora)
         + setSala(sala)
         + setExame(exame)
+        + verificarHorario(hora, sala)
+        + agendarExame(exame)
     }
 
     class Paciente{
@@ -35,6 +37,7 @@
         + setCPF(cpf)
         + setEndereco(endereco)
         + setTelefone(telefone)
+        + verificaCadastro(paciente, cpf, endereco, telefone)
     }
 
     class Medico{
