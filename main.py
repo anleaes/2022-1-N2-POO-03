@@ -7,4 +7,7 @@ from especialidade import Especialidade
 from paciente import Paciente
 from cadastroPaciente import CadastroPaciente
 
+
+sala1 = Sala(1, 1, clinica1)
+
 agenda1 = Agenda("12:00", sala1, exame1, medico1)
