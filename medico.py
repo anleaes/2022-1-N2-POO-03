@@ -13,3 +13,6 @@ class Medico():
 
     def getCRM(self):
         return self._crm
+
+    def getPaciente(self):
+        return self._paciente
