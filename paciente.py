@@ -10,3 +10,5 @@ class Paciente():
 
     def getIdade(self):
         return self._idade
+    def setIdade(self, idade):
+        self._idade = idade
