@@ -3,3 +3,6 @@ class Clinica:
         self._nome = nome
         self._endereco = endereco
         self._telefone = telefone
+
+    def getNome(self):
+        return self._nome
