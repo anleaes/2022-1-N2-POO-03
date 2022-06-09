@@ -21,3 +21,4 @@ class CadastroPaciente:
         self._telefone = telefone
 
     def verificaCadastro(self, paciente, cpf, endereco, telefone):
+        pass
