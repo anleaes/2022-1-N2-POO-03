@@ -18,3 +18,5 @@ class Medico():
 
     def getPaciente(self):
         return self._paciente
+    def setPaciente(self, paciente):
+        self._paciente = paciente
