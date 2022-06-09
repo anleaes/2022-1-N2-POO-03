@@ -3,3 +3,6 @@ class Agenda:
         self._hora = hora
         self._sala = sala
         self._exame = exame
+
+    def getHora(self):
+        return self._hora
