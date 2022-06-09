@@ -10,3 +10,5 @@ class Exames():
 
     def getTipoExame(self):
         return self._tipoExame
+    def setTipoExame(self, tipoExame):
+        self._tipoExame = tipoExame
