@@ -9,3 +9,5 @@ class Agenda:
     def setHora(self, hora):
         self._hora = hora
 
+    def getSala(self):
+        return self._sala
