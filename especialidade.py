@@ -10,3 +10,5 @@ class Especialidade:
 
     def getMedico(self):
         return self._medico
+    def setMedico(self, medico):
+        self._medico = medico
