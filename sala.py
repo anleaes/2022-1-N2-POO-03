@@ -13,3 +13,6 @@ class Sala:
         return self._andar
     def setAndar(self, andar):
         self._andar = andar
+
+    def getClinica(self):
+        return self._clinica
