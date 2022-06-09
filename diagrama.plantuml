@@ -105,6 +105,20 @@
         + setClinica(clinica)
     }
 
+    class Endereco{
+        - nomeRua : String
+        - numero : Integer
+        - bairro : String
+        - cidade : String
+        + construtor(nomeRua, numero, bairro, cidade)
+    }
+
+    class Telefone{
+        - ddd : Integer
+        - numero : Integer
+        + construtor(ddd, numero)
+    }
+
     Paciente <|--> CadastroPaciente
     Paciente <|--> Medico
     Medico *--> Especialidade
