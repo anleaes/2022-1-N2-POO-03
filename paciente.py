@@ -1,11 +1,14 @@
 class Paciente():
-    def __init__(self, nome, idade, cpf):
+    def __init__(self, nome, idade):
         self._nome = nome
         self._idade = idade
-        self._cpf = cpf
 
-    def marcarConsulta(self, Especialidade, dia, hora):
-        if dia < 30 and dia > 0:
-            print(f"CONSULTA MARCADA COM: {Especialidade.getNome()} / MARCADO dia {dia}, hora {hora}")
-            pass # fim if
-        pass # fim marcarConsulta
+    def getNome(self):
+        return self._nome
+    def setNome(self, nome):
+        self._nome = nome
+
+    def getIdade(self):
+        return self._idade
+    def setIdade(self, idade):
+        self._idade = idade
