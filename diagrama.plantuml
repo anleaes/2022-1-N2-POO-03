@@ -117,6 +117,10 @@
         - ddd : Integer
         - numero : Integer
         + construtor(ddd, numero)
+        + getDDD()
+        + setDDD(ddd)
+        + getNumero()
+        + setNumero(numero)
     }
 
     Paciente <|--> CadastroPaciente
