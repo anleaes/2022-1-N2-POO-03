@@ -118,7 +118,7 @@
         - numero : Integer
         + construtor(ddd, numero)
         + getDDD()
-        + setDDD()
+        + setDDD(ddd)
         + getNumero()
         + setNumero(numero)
     }
