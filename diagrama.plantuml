@@ -30,8 +30,8 @@
 
     class CadastroPaciente{
         - cpf : Integer
-        - endereco : String
-        - telefone : Integer
+        - endereco : Endereco
+        - telefone : Telefone
         - paciente : Paciente
         + construtor(cpf, endereco, telefone, paciente)
         + getCPF()
@@ -81,8 +81,8 @@
 
     class Clinica{
         - nome : String
-        - endereco : String
-        - telefone : Integer
+        - endereco : Endereco
+        - telefone : Telefone
         + construtor(nome, endereco, telefone)
         + getNome()
         + getEndereco()
@@ -126,5 +126,9 @@
     Sala *--> Agenda
     Agenda <--* Especialidade
     Clinica *--> Sala
+    Clinica <--* Endereco
+    CadastroPaciente <--* Endereco
+    Telefone *--> Clinica
+    Telefone *--> CadastroPaciente
 
 @enduml
