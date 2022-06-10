@@ -7,6 +7,7 @@ from especialidade import Especialidade
 from paciente import Paciente
 from cadastroPaciente import CadastroPaciente
 from endereco import Endereco
+from telefone import Telefone
 
 endereco1 = Endereco("rua fulano de tal", 55, "centro", "cidade")
 endereco2 = Endereco("rua ciclano de tal", 247, "barro sul", "cidade")
