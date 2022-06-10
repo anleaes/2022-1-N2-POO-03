@@ -81,7 +81,7 @@
 
     class Clinica{
         - nome : String
-        - endereco : String
+        - endereco : Endereco
         - telefone : Integer
         + construtor(nome, endereco, telefone)
         + getNome()
