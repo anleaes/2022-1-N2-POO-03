@@ -30,7 +30,7 @@
 
     class CadastroPaciente{
         - cpf : Integer
-        - endereco : String
+        - endereco : Endereco
         - telefone : Integer
         - paciente : Paciente
         + construtor(cpf, endereco, telefone, paciente)
