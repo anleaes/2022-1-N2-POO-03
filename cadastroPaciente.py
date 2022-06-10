@@ -32,7 +32,7 @@ class CadastroPaciente:
                 # verifica se cpf não é nulo e se é numero
                 if self.getEndereco() is not None:
                     # verifica se endereco não é nulo
-                    if self.getTelefone() is not None and self.getTelefone() > 0:
+                    if self.getTelefone() is not None:
                         # verifica se telefone não é nulo
                         # sets
                         self.setPaciente(paciente)
