@@ -31,7 +31,7 @@
     class CadastroPaciente{
         - cpf : Integer
         - endereco : Endereco
-        - telefone : Integer
+        - telefone : Telefone
         - paciente : Paciente
         + construtor(cpf, endereco, telefone, paciente)
         + getCPF()
