@@ -126,5 +126,7 @@
     Sala *--> Agenda
     Agenda <--* Especialidade
     Clinica *--> Sala
+    Clinica <--* Endereco
+    CadastroPaciente <--* Endereco
 
 @enduml
