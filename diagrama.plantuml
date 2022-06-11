@@ -5,17 +5,17 @@
         - sala : Sala
         - exame : Exames
         - medico : Medico
-        + construtor(hora, sala, exame)
+        + construtor(hora, sala, exame, medico)
         + getHora()
         + setHora(hora)
         + getSala()
         + setSala(sala)
         + getExame()
         + setExame(exame)
-        + getEspecialidade()
-        + setEspecialidade(especialidade)
+        + getMedico()
+        + setMedico(medico)
         + verificarHorario(hora, sala)
-        + agendarExame(exame, especialidade)
+        + agendarExame(exame, medico, hora, sala)
     }
 
     class Paciente{
@@ -23,8 +23,8 @@
         - idade : Integer
         + construtor(nome, idade)
         + getNome()
-        + getIdade()
         + setNome(nome)
+        + getIdade()
         + setIdade(idade)
     }
 
