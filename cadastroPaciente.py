@@ -26,13 +26,13 @@ class CadastroPaciente:
         self._paciente = paciente
 
     def verificaCadastro(self, paciente, cpf, endereco, telefone):
-        if self.getPaciente() is not None:
+        if self.getPaciente() is not None and self.getPaciente() is paciente:
             # verifica se paciente não é nulo
-            if self.getCPF() is not None and self.getCPF() > 0:
+            if self.getCPF() is not None and self.getCPF() > 0 and self.getCPF() is cpf:
                 # verifica se cpf não é nulo e se é numero
-                if self.getEndereco() is not None:
+                if self.getEndereco() is not None and self.getEndereco() is endereco:
                     # verifica se endereco não é nulo
-                    if self.getTelefone() is not None:
+                    if self.getTelefone() is not None and self.getTelefone() is telefone:
                         # verifica se telefone não é nulo
                         # sets
                         self.setPaciente(paciente)
@@ -40,7 +40,11 @@ class CadastroPaciente:
                         self.setEndereco(endereco)
                         self.setTelefone(telefone)
                         print(f"PACIENTE: {paciente.getNome()} VERIFICADO")
-                        pass
+                    else:
+                        self.cadastroNaoVerificado()
+                else:
+                    self.cadastroNaoVerificado()
+            else:
+                self.cadastroNaoVerificado()
         else:
-            print("CADASTRO NAO FOI VERIFICADO")
-            pass
+            self.cadastroNaoVerificado()
