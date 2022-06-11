@@ -30,10 +30,13 @@ class Agenda:
 
     def verificarHorario(self, hora, sala):
         if self.getHora() is not None and self.getHora() is hora:
-            pass
+            if self.getSala() is not None and self.getSala() is sala:
+                pass
+            else:
+                self.horarioNaoVerificado()
         else:
+            return False
             self.horarioNaoVerificado()
-        return True
 
     def agendarExame(self, exame, especialidade):
         pass
