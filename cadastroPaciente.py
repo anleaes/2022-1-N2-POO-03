@@ -26,7 +26,7 @@ class CadastroPaciente:
         self._paciente = paciente
 
     def verificaCadastro(self, paciente, cpf, endereco, telefone):
-        if self.getPaciente() is not None:
+        if self.getPaciente() is not None and self.getPaciente() is paciente:
             # verifica se paciente não é nulo
             if self.getCPF() is not None and self.getCPF() > 0:
                 # verifica se cpf não é nulo e se é numero
