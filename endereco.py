@@ -19,3 +19,8 @@ class Endereco:
         return self._bairro
     def setBairro(self, bairro):
         self._bairro = bairro
+
+    def getCidade(self):
+        return self._cidade
+    def setCidade(self, cidade):
+        self._cidade = cidade
