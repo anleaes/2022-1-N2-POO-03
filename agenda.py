@@ -28,6 +28,9 @@ class Agenda:
     def horarioNaoVerificado(self):
         return print("HORARIO NAO VERIFICADO")
 
+    def exameNaoMarcado(self):
+        return print("EXAME NAO MARCADO")
+
     def verificarHorario(self, hora, sala):
         if self.getHora() is not None and self.getHora() is hora:
             if self.getSala() is not None and self.getSala() is sala:
