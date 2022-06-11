@@ -45,7 +45,7 @@ class Agenda:
     def agendarExame(self, exame, medico, hora, sala):
         if self.verificarHorario(hora, sala) is True:
             if self.getExame() is not None and self.getExame() is exame:
-                if self.getEspecialidade() is not None and self.getEspecialidade() is especialidade:
+                if self.getMedico() is not None and self.getMedico() is medico:
                     print(f"EXAME {self.getExame()} MARCADO AS: {self.getHora()} NA SALA: {self.getSala()}")
                 else:
                     self.exameNaoMarcado()
