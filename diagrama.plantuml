@@ -4,7 +4,7 @@
         - hora : String
         - sala : Sala
         - exame : Exames
-        - especialidade : Especialidade
+        - medico : Medico
         + construtor(hora, sala, exame)
         + getHora()
         + setHora(hora)
