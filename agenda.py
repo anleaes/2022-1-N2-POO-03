@@ -26,6 +26,11 @@ class Agenda:
     def setMedico(self, medico):
         self._medico = medico
 
+    def getCadastro(self):
+        return self._cadastro
+    def setCadastro(self, cadastroPaciente):
+        self._cadastro = cadastroPaciente
+
     def horarioNaoVerificado(self):
         return print("HORARIO NAO VERIFICADO")
 
