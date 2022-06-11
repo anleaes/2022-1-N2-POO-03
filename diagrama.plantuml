@@ -40,6 +40,7 @@
         + setCPF(cpf)
         + setEndereco(endereco)
         + setTelefone(telefone)
+        + cadastroNaoVerificado()
         + verificaCadastro(paciente, cpf, endereco, telefone)
     }
 
