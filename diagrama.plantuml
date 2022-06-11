@@ -65,8 +65,8 @@
         - tipoExame : String
         + construtor(nome, tipoExame)
         + getNome()
-        + getTipoExame()
         + setNome(nome)
+        + getTipoExame()
         + setTipoExame(exame)
     }
 
