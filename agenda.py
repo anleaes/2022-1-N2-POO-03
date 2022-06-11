@@ -20,10 +20,10 @@ class Agenda:
     def setExame(self, exame):
         self._exame = exame
 
-    def getEspecialidade(self):
+    def getMedico(self):
         return self._especialidade
-    def setEspecialidade(self, especialidade):
-        self._especialidade = especialidade
+    def setMedico(self, medico):
+        self._medico = medico
 
     def horarioNaoVerificado(self):
         return print("HORARIO NAO VERIFICADO")
