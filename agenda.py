@@ -32,7 +32,7 @@ class Agenda:
         if self.getHora() is not None and self.getHora() is hora:
             pass
         else:
-            print("HORARIO NAO VERIFICADO")
+            self.horarioNaoVerificado()
         return True
 
     def agendarExame(self, exame, especialidade):
