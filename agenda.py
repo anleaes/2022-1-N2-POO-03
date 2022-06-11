@@ -48,7 +48,7 @@ class Agenda:
             return False
             self.horarioNaoVerificado()
 
-    def agendarExame(self, exame, medico, hora, sala):
+    def agendarExame(self, cadastro, exame, medico, hora, sala):
         if self.verificarHorario(hora, sala) is True:
             if self.getExame() is not None and self.getExame() is exame:
                 if self.getMedico() is not None and self.getMedico() is medico:
