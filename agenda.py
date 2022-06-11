@@ -26,7 +26,11 @@ class Agenda:
         self._especialidade = especialidade
 
     def verificarHorario(self, hora, sala):
-        pass
+        if self.getHora() is not None and self.getHora() is hora:
+            pass
+        else:
+            print("HORARIO NAO VERIFICADO")
+        return True
 
     def agendarExame(self, exame, especialidade):
         pass
