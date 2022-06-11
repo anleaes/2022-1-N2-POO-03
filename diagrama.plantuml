@@ -38,9 +38,11 @@
         + getCPF()
         + getEndereco()
         + getTelefone()
+        + getPaciente()
         + setCPF(cpf)
         + setEndereco(endereco)
         + setTelefone(telefone)
+        + setPaciente(paciente)
         + cadastroNaoVerificado()
         + verificaCadastro(paciente, cpf, endereco, telefone)
     }
