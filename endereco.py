@@ -14,3 +14,8 @@ class Endereco:
         return self._numero
     def setNumero(self, numero):
         self._numero = numero
+
+    def getBairro(self):
+        return self._bairro
+    def setBairro(self, bairro):
+        self._bairro = bairro
