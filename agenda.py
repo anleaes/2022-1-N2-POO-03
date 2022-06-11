@@ -20,8 +20,37 @@ class Agenda:
     def setExame(self, exame):
         self._exame = exame
 
-    def verificarHorario(self, hora, sala):
-        pass
+    def getMedico(self):
+        return self._medico
+    def setMedico(self, medico):
+        self._medico = medico
 
-    def agendarExame(self, exame, medico):
-        pass
+    def horarioNaoVerificado(self):
+        return print("HORARIO NAO VERIFICADO")
+
+    def exameNaoMarcado(self):
+        return print("EXAME NAO MARCADO")
+
+    def verificarHorario(self, hora, sala):
+        if self.getHora() is not None and self.getHora() is hora:
+            if self.getSala() is not None and self.getSala() is sala:
+                return True
+            else:
+                return False
+                self.horarioNaoVerificado()
+        else:
+            return False
+            self.horarioNaoVerificado()
+
+    def agendarExame(self, exame, medico, hora, sala):
+        if self.verificarHorario(hora, sala) is True:
+            if self.getExame() is not None and self.getExame() is exame:
+                if self.getMedico() is not None and self.getMedico() is medico:
+                    print(
+                        f"EXAME {self.getExame()} POR {self.getMedico()} MARCADO AS: {self.getHora()} NA SALA: {self.getSala()}")
+                else:
+                    self.exameNaoMarcado()
+            else:
+                self.exameNaoMarcado()
+        else:
+            self.exameNaoMarcado()
