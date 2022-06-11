@@ -4,15 +4,18 @@
         - hora : String
         - sala : Sala
         - exame : Exames
+        - especialidade : Especialidade
         + construtor(hora, sala, exame)
         + getHora()
-        + getSala()
-        + getExame()
         + setHora(hora)
+        + getSala()
         + setSala(sala)
+        + getExame()
         + setExame(exame)
+        + getEspecialidade()
+        + setEspecialidade(especialidade)
         + verificarHorario(hora, sala)
-        + agendarExame(exame)
+        + agendarExame(exame, especialidade)
     }
 
     class Paciente{
@@ -27,8 +30,8 @@
 
     class CadastroPaciente{
         - cpf : Integer
-        - endereco : String
-        - telefone : Integer
+        - endereco : Endereco
+        - telefone : Telefone
         - paciente : Paciente
         + construtor(cpf, endereco, telefone, paciente)
         + getCPF()
@@ -37,6 +40,7 @@
         + setCPF(cpf)
         + setEndereco(endereco)
         + setTelefone(telefone)
+        + cadastroNaoVerificado()
         + verificaCadastro(paciente, cpf, endereco, telefone)
     }
 
@@ -78,8 +82,8 @@
 
     class Clinica{
         - nome : String
-        - endereco : String
-        - telefone : Integer
+        - endereco : Endereco
+        - telefone : Telefone
         + construtor(nome, endereco, telefone)
         + getNome()
         + getEndereco()
@@ -102,12 +106,42 @@
         + setClinica(clinica)
     }
 
-    Paciente <|-- CadastroPaciente
-    Paciente <|-- Medico
-    Medico *-- Especialidade
-    Exames *-- Agenda
-    Sala *-- Agenda
-    Agenda *-- Medico
-    Clinica *-- Sala
+    class Endereco{
+        - nomeRua : String
+        - numero : Integer
+        - bairro : String
+        - cidade : String
+        + construtor(nomeRua, numero, bairro, cidade)
+        + getNomeRua()
+        + getNumero()
+        + getBairro()
+        + getCidade()
+        + setNomeRua(nomeRua)
+        + setNumero(numero)
+        + setBairro(bairro)
+        + setCidade(cidade)
+    }
+
+    class Telefone{
+        - ddd : Integer
+        - numero : Integer
+        + construtor(ddd, numero)
+        + getDDD()
+        + setDDD(ddd)
+        + getNumero()
+        + setNumero(numero)
+    }
+
+    Paciente <|--> CadastroPaciente
+    Paciente <|--> Medico
+    Medico *--> Especialidade
+    Exames *--> Agenda
+    Sala *--> Agenda
+    Agenda <--* Especialidade
+    Clinica *--> Sala
+    Clinica <--* Endereco
+    CadastroPaciente <--* Endereco
+    Telefone *--> Clinica
+    Telefone *--> CadastroPaciente
 
 @enduml
