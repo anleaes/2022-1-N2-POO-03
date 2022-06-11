@@ -9,3 +9,8 @@ class Endereco:
         return self._nomeRua
     def setNomeRua(self, nomeRua):
         self._nomeRua = nomeRua
+
+    def getNumero(self):
+        return self._numero
+    def setNumero(self, numero):
+        self._numero = numero
