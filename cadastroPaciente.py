@@ -4,6 +4,7 @@ class CadastroPaciente:
         self._endereco = endereco
         self._telefone = telefone
         self._paciente = paciente
+        self._cadastro = False
 
     def getCPF(self):
         return self._cpf
@@ -43,6 +44,7 @@ class CadastroPaciente:
                         self.setEndereco(endereco)
                         self.setTelefone(telefone)
                         print(f"PACIENTE: {paciente.getNome()} VERIFICADO")
+                        self._cadastro = True
                     else:
                         self.cadastroNaoVerificado()
                 else:
