@@ -40,5 +40,11 @@ class CadastroPaciente:
                         self.setEndereco(endereco)
                         self.setTelefone(telefone)
                         print(f"PACIENTE: {paciente.getNome()} VERIFICADO")
+                    else:
+                        self.cadastroNaoVerificado()
+                else:
+                    self.cadastroNaoVerificado()
+            else:
+                self.cadastroNaoVerificado()
         else:
-            print("CADASTRO NAO FOI VERIFICADO")
+            self.cadastroNaoVerificado()
