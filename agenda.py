@@ -39,5 +39,10 @@ class Agenda:
             return False
             self.horarioNaoVerificado()
 
-    def agendarExame(self, exame, especialidade):
-        pass
+    def agendarExame(self, exame, especialidade, hora, sala):
+        if self.verificarHorario(hora, sala) is True:
+            # marcar exame
+            pass
+        else:
+            #nao marcar exame
+            pass
