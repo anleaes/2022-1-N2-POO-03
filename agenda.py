@@ -41,6 +41,10 @@ class Agenda:
 
     def agendarExame(self, exame, especialidade, hora, sala):
         if self.verificarHorario(hora, sala) is True:
+            if self.getExame() is not None and self.getExame() is exame:
+                pass
+            else:
+                pass
             # marcar exame
             pass
         else:
