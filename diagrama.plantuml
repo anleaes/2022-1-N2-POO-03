@@ -112,6 +112,14 @@
         - bairro : String
         - cidade : String
         + construtor(nomeRua, numero, bairro, cidade)
+        + getNomeRua()
+        + getNumero()
+        + getBairro()
+        + getCidade()
+        + setNomeRua(nomeRua)
+        + setNumero(numero)
+        + setBairro(bairro)
+        + setCidade(cidade)
     }
 
     class Telefone{
