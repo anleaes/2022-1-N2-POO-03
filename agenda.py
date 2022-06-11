@@ -25,6 +25,9 @@ class Agenda:
     def setEspecialidade(self, especialidade):
         self._especialidade = especialidade
 
+    def horarioNaoVerificado(self):
+        return print("CADASTRO NAO VERIFICADO")
+
     def verificarHorario(self, hora, sala):
         if self.getHora() is not None and self.getHora() is hora:
             pass
