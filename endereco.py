@@ -4,3 +4,8 @@ class Endereco:
         self._numero = numero
         self._bairro = bairro
         self._cidade = cidade
+
+    def getNomeRua(self):
+        return self._nomeRua
+    def setNomeRua(self, nomeRua):
+        self._nomeRua = nomeRua
