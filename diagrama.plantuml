@@ -4,18 +4,18 @@
         - hora : String
         - sala : Sala
         - exame : Exames
-        - especialidade : Especialidade
-        + construtor(hora, sala, exame)
+        - medico : Medico
+        + construtor(hora, sala, exame, medico)
         + getHora()
         + setHora(hora)
         + getSala()
         + setSala(sala)
         + getExame()
         + setExame(exame)
-        + getEspecialidade()
-        + setEspecialidade(especialidade)
+        + getMedico()
+        + setMedico(medico)
         + verificarHorario(hora, sala)
-        + agendarExame(exame, especialidade)
+        + agendarExame(exame, medico, hora, sala)
     }
 
     class Paciente{
@@ -23,8 +23,8 @@
         - idade : Integer
         + construtor(nome, idade)
         + getNome()
-        + getIdade()
         + setNome(nome)
+        + getIdade()
         + setIdade(idade)
     }
 
@@ -33,29 +33,29 @@
         - endereco : Endereco
         - telefone : Telefone
         - paciente : Paciente
+        - cadastro : Bool
         + construtor(cpf, endereco, telefone, paciente)
         + getCPF()
         + getEndereco()
         + getTelefone()
+        + getPaciente()
         + setCPF(cpf)
         + setEndereco(endereco)
         + setTelefone(telefone)
+        + setPaciente(paciente)
         + cadastroNaoVerificado()
         + verificaCadastro(paciente, cpf, endereco, telefone)
     }
 
     class Medico{
         - nome : String
-        - idade : Integer
         - CRM : Integer
         - paciente : Paciente
-        + construtor(nome, idade, crm, paciente)
+        + construtor(nome, crm, paciente)
         + getNome()
-        + getIdade()
         + getCRM()
         + getPaciente()
         + setNome(nome)
-        + setIdade(idade)
         + setCRM(crm)
         + setPaciente(paciente)
     }
@@ -65,8 +65,8 @@
         - tipoExame : String
         + construtor(nome, tipoExame)
         + getNome()
-        + getTipoExame()
         + setNome(nome)
+        + getTipoExame()
         + setTipoExame(exame)
     }
 
