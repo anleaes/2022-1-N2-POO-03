@@ -46,7 +46,7 @@ class Agenda:
         if self.verificarHorario(hora, sala) is True:
             if self.getExame() is not None and self.getExame() is exame:
                 if self.getEspecialidade() is not None and self.getEspecialidade() is especialidade:
-                    pass
+                    print(f"EXAME {self.getExame()} MARCADO AS: {self.getHora()} NA SALA: {self.getSala()}")
                 else:
                     pass
             else:
