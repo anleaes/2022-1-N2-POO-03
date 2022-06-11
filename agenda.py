@@ -22,7 +22,7 @@ class Agenda:
         self._exame = exame
 
     def getMedico(self):
-        return self._especialidade
+        return self._medico
     def setMedico(self, medico):
         self._medico = medico
 
