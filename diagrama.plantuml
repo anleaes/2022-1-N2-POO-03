@@ -49,16 +49,13 @@
 
     class Medico{
         - nome : String
-        - idade : Integer
         - CRM : Integer
         - paciente : Paciente
-        + construtor(nome, idade, crm, paciente)
+        + construtor(nome, crm, paciente)
         + getNome()
-        + getIdade()
         + getCRM()
         + getPaciente()
         + setNome(nome)
-        + setIdade(idade)
         + setCRM(crm)
         + setPaciente(paciente)
     }
