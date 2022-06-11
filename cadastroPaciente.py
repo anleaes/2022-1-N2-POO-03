@@ -25,6 +25,9 @@ class CadastroPaciente:
     def setPaciente(self, paciente):
         self._paciente = paciente
 
+    def cadastroNaoVerificado(self):
+        return print("CADASTRO NAO VERIFICADO")
+
     def verificaCadastro(self, paciente, cpf, endereco, telefone):
         if self.getPaciente() is not None and self.getPaciente() is paciente:
             # verifica se paciente não é nulo
