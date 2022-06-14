@@ -33,7 +33,6 @@
         - endereco : Endereco
         - telefone : Telefone
         - paciente : Paciente
-        - cadastro : Bool
         + construtor(cpf, endereco, telefone, paciente)
         + getCPF()
         + getEndereco()
