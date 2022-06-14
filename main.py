@@ -29,12 +29,12 @@ medico1 = Medico("luiz", 553992, paciente1)
 
 especialidade1 = Especialidade("neurologista", medico1)
 
-
-
 agenda1 = Agenda("12:00", sala1, exame1, medico1)
 
+print("\n")
 cadastroP1.verificaCadastro(paciente1, 11144477700, endereco2, telefone2)
 cadastroP1.verificaCadastro(paciente1, "11144477700", endereco2, telefone1)
 
+print("\n")
 agenda1.agendarExame(exame1, medico1, "12:00", sala1)
 agenda1.agendarExame(exame1, medico1, "11:00", sala1) #supostamente errado
