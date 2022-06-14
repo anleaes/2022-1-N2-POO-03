@@ -37,4 +37,4 @@ cadastroP1.verificaCadastro(paciente1, 11144477700, endereco2, telefone2)
 cadastroP1.verificaCadastro(paciente1, "11144477700", endereco2, telefone1)
 
 agenda1.agendarExame(exame1, medico1, "12:00", sala1)
-agenda1.agendarExame(exame1, medico1, "12:00", sala1)
+agenda1.agendarExame(exame1, medico1, "11:00", sala1) #supostamente errado
