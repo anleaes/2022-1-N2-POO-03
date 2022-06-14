@@ -4,7 +4,6 @@ class CadastroPaciente:
         self._endereco = endereco
         self._telefone = telefone
         self._paciente = paciente
-        self._cadastro = False
 
     def getCPF(self):
         return self._cpf
