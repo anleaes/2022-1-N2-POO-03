@@ -27,3 +27,5 @@ agenda1 = Agenda("12:00", sala1, exame1, medico1)
 
 cadastroP1.verificaCadastro(paciente1, 11144477700, endereco2, telefone2)
 cadastroP1.verificaCadastro(paciente1, "11144477700", endereco2, telefone1)
+
+agenda1.agendarExame(exame1, medico1, agenda1.getHora(), agenda1.getMedico())
